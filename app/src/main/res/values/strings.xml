@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">tp2mobile</string>
+    <string name="convertir">Convertir</string>
+    <string name="euros_dinars">Euros -> Dinars</string>
+    <string name="dinars_euros">Dinars -> Euros</string>
+    <string name="result">Result</string>
+    <string name="saisir_montant_a_convert">Saisir le montant a convertir</string>
+</resources>
