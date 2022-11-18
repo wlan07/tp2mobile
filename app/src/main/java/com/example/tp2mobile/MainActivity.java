@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 
 
-public class MainActivity extends Activity  {
+public class MainActivity extends Activity  implements View.OnClickListener{
     Button convert ;
     RadioButton eTOd,dTOe;
     EditText p;
@@ -28,21 +28,22 @@ public class MainActivity extends Activity  {
         t1=findViewById(R.id.textcovertir);
         r=findViewById(R.id.result);
 
-        convert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                String ch=p.getText().toString();
-                double mon= Double.valueOf(ch);
-                if (eTOd.isChecked())
-                    r.setText(""+mon/3);
-                else if (dTOe.isChecked())
-                    r.setText(""+mon*3);
-            }
-        });
+        convert.setOnClickListener(this);
     }
 
 
+    @Override
+    public void onClick(View view) {
 
 
+        if (view.getId()==convert.getId()){
+            String ch=p.getText().toString();
+            double mon= Double.valueOf(ch);
+            if (eTOd.isChecked())
+                r.setText(""+mon/3);
+            else
+                r.setText(""+mon*3);
+        }
+
+    }
 }

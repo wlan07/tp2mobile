@@ -7,12 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        />
-
     <TextView
         android:id="@+id/textcovertir"
         android:layout_width="wrap_content"
@@ -36,27 +30,6 @@
         android:textColor="#0C0C0C"
         android:textColorHint="#FFFFFF" />
 
-    <RadioButton
-        android:id="@+id/radio2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="250dp"
-        android:text="@string/dinars_euros"
-        android:textSize="20sp" />
-
-    <RadioButton
-        android:id="@+id/radio1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="50dp"
-        android:text="@string/euros_dinars"
-        android:textSize="20sp" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -74,5 +47,31 @@
         android:layout_marginTop="500dp"
         android:text="@string/result"
         android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="635dp">
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="256dp"
+        android:text="@string/euros_dinars" />
+
+    <RadioButton
+        android:id="@+id/radio2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="306dp"
+        android:text="@string/dinars_euros" />
 
 </RelativeLayout>
